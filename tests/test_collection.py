@@ -17,8 +17,8 @@ from services.collection_service import (
     AlreadyInCollectionError,
     NotInCollectionError,
 )
-
-
+'''
+############################
 @pytest.fixture
 def app():
     """Create an isolated test app with an in-memory database."""
@@ -52,7 +52,7 @@ def sample_film(app):
         db.session.commit()
         return film.id
 
-
+'''
 # ── Basic add ───────────────────────────────────────────────────────────────
 
 def test_add_to_collection_creates_entry(app, sample_user, sample_film):
